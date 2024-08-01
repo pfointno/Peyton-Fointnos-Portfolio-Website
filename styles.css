@@ -1,0 +1,74 @@
+.gradient-background {
+    background: linear-gradient(300deg, blue, white, gray);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .start-container {
+    position: relative;
+    padding-top: 50px;
+  }
+  .top-cloud {
+    position: absolute;
+    left: 150px;
+    top: 20px;
+  }
+  .bottom-cloud {
+    position: absolute;
+    right: 150px;
+    top: 170px;
+  }
+  .top-softball {
+    position: absolute;
+    height: 80px;
+    left: 165px;
+    top: 60px;
+  }
+  .bottom-softball {
+    position: absolute;
+    height: 80px;
+    right: 180px;
+    top: 210px;
+  }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
+  @media (max-width : 450px){
+.top-cloud{
+  position: absolute;
+  height: 30px;
+  right: 200px;
+  top: 50px;
+}
+.top-softball {
+  position: absolute;
+  height: 30px;
+  right: 180px;
+  top: 80px;
+}
+.bottom-cloud{
+  position: absolute;
+  height: 30px;
+  right: 150px;
+  top: 250px;
+}
+.bottom-softball {
+  position: absolute;
+  height: 30px;
+  right: 180px;
+  top: 290px;
+}
+  } 
